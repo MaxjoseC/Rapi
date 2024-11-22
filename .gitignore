@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+
+# If you're using MySQL, you might also want to ignore database dumps
+*.sql
+*.sql.gz
+
+# ENV files (environment variables)
+.env
+
+# Node modules (if using npm for frontend assets)
+node_modules/
+
+# Static and media files
+staticfiles/
+media/
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# macOS-specific files
+.DS_Store
+
+# Heroku stuff
+Procfile
