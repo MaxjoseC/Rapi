@@ -3,7 +3,7 @@ from .views import ClienteListcreate, ClienteRetrieveUpdateDestroy
 
 urlpatterns = [
     path('clientes/', ClienteListcreate.as_view(), name='cliente-list'),
-    path('cliente/<int:pk>/', ClienteRetrieveUpdateDestroy.as_view(), name='cliente-detail'), 
+    path('clientes/<int:pk>/', ClienteRetrieveUpdateDestroy.as_view(), name='cliente-detail'), 
     ]
     
     
