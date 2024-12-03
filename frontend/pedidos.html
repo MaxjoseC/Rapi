@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Pedidos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <ul class="sidebar__list">
+        <li class="sidebar__element">
+          <img src="./assets/store.svg" class="sidebar_icon--store">
+          <div class="sidebar__hide">
+            <p class="sidebar__text">Menu</p>
+          </div>
+        </li>
+        <li class="sidebar__element">
+          <img src="./assets/clientes.svg" class="sidebar_icon--clientes">
+          <div class="sidebar__hide">
+            <a href="index.html">
+              <p class="sidebar__text">Clientes</p>
+            </a>
+          </div>
+        </li>
+        <li class="sidebar__element">
+          <img src="./assets/box.svg" class="sidebar_icon--pedidos">
+          <div class="sidebar__hide">
+            <p class="sidebar__text">Pedidos</p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="main-content">
+      <h1>Gestión de Pedidos</h1>
+      <button id="btn-crear-pedido">Crear Pedido</button>
+      <table id="pedidos-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Total</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Aquí se cargará la lista de pedidos dinámicamente -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script-pedidos.js"></script>
+</body>
+</html>
