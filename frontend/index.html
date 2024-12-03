@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Clientes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">`
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <ul class="sidebar__list">
+        <li class="sidebar__element">
+          <img src="./assets/store.svg" class="sidebar_icon--store">
+          <div class="sidebar__hide">
+            <p class="sidebar__text">Menu</p>
+          </div>
+        </li>  
+        <li class="sidebar__element">  
+          <img src="./assets/clientes.svg" class="sidebar_icon--clientes">
+          <div class="sidebar__hide">
+            <p class="sidebar__text">Clientes</p>
+          </div>
+        </li>
+        <li class="sidebar__element">
+              <img src="./assets/box.svg" class="sidebar_icon--pedidos">
+              <div class="sidebar__hide">
+                <a href="pedidos.html">
+                <p class="sidebar__text">Pedidos</p>
+                </a>
+              </div>
+          </li>
+      </ul>
+    </aside>
+
+    <div class="main-content">
+      <h1>Lista de Clientes</h1>
+
+
+      <button id="show-form-btn">Agregar Cliente</button>
+      <table id="clientes-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Calle</th>
+            <th>Número</th>
+            <th>Sector</th>
+            <th>Descuento</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+      
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
