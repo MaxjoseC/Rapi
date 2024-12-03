@@ -1,0 +1,82 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-image: linear-gradient(#FF4890, #50A6FB);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.sidebar{
+    background-color: white;
+    width: max-content;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+.sidebar:hover .sidebar__element{
+    grid-template-columns: 40px 1fr;
+}
+
+.sidebar__list{
+    list-style: none;
+    padding: 0;
+
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    grid-area: .4rem;
+}
+.sidebar__element{
+    padding: .8rem 1.3rem;
+    border-radius: 3px;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30px 0fr;
+    fill: #998f8f46;
+    color: #526581;
+    transition: grid-template-columns .4s;
+}
+
+.sidebar__element:not( :has(.sidebar_icon--store)):hover{
+    background-color: #007AFF;
+    color: #fff;
+    fill: #fff;
+    cursor: pointer;
+}
+
+.sidebar__hide{
+    overflow: hidden;
+}
+.sidebar__element a, .sidebar__element button {
+    text-decoration: none; 
+    color: inherit; 
+    background-color: transparent; 
+}
