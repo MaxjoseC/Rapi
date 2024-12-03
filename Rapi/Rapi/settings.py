@@ -25,6 +25,8 @@ SECRET_KEY = 'django-insecure-)2nrrl9z-p18qp_ls^1&4c!4k-+sqdq3tw0!#$9%sf+h7y!3o9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 ALLOWED_HOSTS = []
 
 
@@ -42,6 +44,7 @@ INSTALLED_APPS = [
     'items',
     'django_filters',
     'pedidos',
+    'corsheaders',
 ]
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
@@ -59,6 +62,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'Rapi.urls'
