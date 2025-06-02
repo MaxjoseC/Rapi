@@ -38,7 +38,8 @@ jobs:
           cd Rapi
           python manage.py migrate
 
+
       - name: Run tests
         run: |
           cd Rapi
-          python manage.py test
+          python manage.py test --keepdb

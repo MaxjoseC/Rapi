@@ -94,11 +94,19 @@ DATABASES = {
         'NAME': 'railway',
         'USER': 'root',
         'PASSWORD': 'NITYcFflUTIpPornmfmltltgYCtSiSEM',
-        'HOST': 'switchyard.proxy.rlwy.net',  
+        'HOST': 'switchyard.proxy.rlwy.net',
+        'PORT': '50121',
+        'TEST': { 'NAME': 'railway' },
+    },
+    'test': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'railway',  # Usa la BD principal en pruebas
+        'USER': 'root',
+        'PASSWORD': 'NITYcFflUTIpPornmfmltltgYCtSiSEM',
+        'HOST': 'switchyard.proxy.rlwy.net',
         'PORT': '50121',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
