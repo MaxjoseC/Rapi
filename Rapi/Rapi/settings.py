@@ -91,11 +91,11 @@ WSGI_APPLICATION = 'Rapi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django',
+        'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': 'Emajose12.',
-        'HOST': '127.0.0.1',  
-        'PORT': '3306',
+        'PASSWORD': 'NITYcFflUTIpPornmfmltltgYCtSiSEM',
+        'HOST': 'switchyard.proxy.rlwy.net',  
+        'PORT': '50121',
     }
 }
 
