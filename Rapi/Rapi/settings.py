@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'clientes',
     'facturas',
     'items',
-    'django_filters',
+    'django_filter',
     'pedidos',
     'corsheaders',
 ]
