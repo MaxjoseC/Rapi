@@ -10,20 +10,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    services:
-      mysql:
-        image: mysql:8.0
-        env:
-          MYSQL_ROOT_PASSWORD: Emajose12.
-          MYSQL_DATABASE: django
-        ports:
-          - 3306:3306
-        options: >-
-          --health-cmd="mysqladmin ping --silent"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=3
-
     steps:
       - uses: actions/checkout@v4
 
@@ -38,12 +24,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-
-      - name: Wait for MySQL
+          
+      - name: Configurar conexión a MySQL en Railway
         run: |
-          until mysqladmin ping -h"mysql" -uroot -pEmajose12. --silent; do
-            sleep 2
-          done
+            echo "DATABASE_URL=mysql://root:NITYcFflUTIpPornmfmltltgYCtSiSEM@switchyard.proxy.rlwy.net:50121/railway" >> $GITHUB_ENV
+      
+      - name: Validar conexión con Railway MySQL
+        run: |
+          mysql -h switchyard.proxy.rlwy.net -u root -pNITYcFflUTIpPornmfmltltgYCtSiSEM --port 50121 -e "SHOW DATABASES;"
 
       - name: Run migrations
         run: |
