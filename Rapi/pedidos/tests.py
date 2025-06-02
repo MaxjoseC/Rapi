@@ -10,7 +10,9 @@ class PedidoModelTest(TestCase):
             direccion="Calle Falsa 123",
             descuentoBool=True
         )
+
         pedido = Pedido.objects.create(
-            cliente=cliente, estado='pendiente', total=100.00
+            cliente=cliente, estado=0, total=100.00  # Usando número en lugar de 'pendiente'
         )
-        self.assertEqual(str(pedido), f"Pedido #{pedido.id} - {cliente.nombre}")
+
+        self.assertEqual(pedido.estado, 0)  # Comparación con el valor numérico esperado

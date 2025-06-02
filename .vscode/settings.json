@@ -14,6 +14,21 @@
             "database": "django",
             "username": "root",
             "askForPassword": true
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "switchyard.proxy.rlwy.net",
+            "port": 50121,
+            "driver": "MySQL",
+            "name": "railway",
+            "group": "railway",
+            "database": "railway",
+            "username": "root",
+            "askForPassword": true
         }
     ]
 }
