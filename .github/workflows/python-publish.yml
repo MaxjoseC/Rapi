@@ -33,8 +33,7 @@ jobs:
           python-version: '3.11'
 
       - name: Clean pip cache
-        run: pip cache purge    
-  	
+        run: pip cache purge
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
