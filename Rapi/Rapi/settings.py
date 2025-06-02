@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'clientes',
     'facturas',
     'items',
-    'django_filters',
     'pedidos',
     'corsheaders',
 ]
@@ -95,7 +94,7 @@ DATABASES = {
         'NAME': 'django',
         'USER': 'root',
         'PASSWORD': 'Emajose12.',
-        'HOST': 'localhost',  
+        'HOST': '127.0.0.1',  
         'PORT': '3306',
     }
 }
